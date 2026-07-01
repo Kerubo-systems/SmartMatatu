@@ -1,0 +1,107 @@
+/* ==========================================================================
+   layout.css
+   PURPOSE: Grid setups, page structural frameworks, and card layouts.
+   ========================================================================== */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__content {
+  flex: 1;
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.site-header {
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  padding: var(--space-md);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.site-footer {
+  width: 100%;
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.hero-card {
+  background-color: var(--color-card-bg);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.hero-card__banner {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.hero-card__body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.trust-badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+@media (min-width: 480px) {
+  .trust-badges {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.survey-card {
+  background-color: var(--color-card-bg);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.survey-card__progress-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.survey-card__nav {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.survey-card__nav > * {
+  flex: 1;
+}
+
+.thank-you-card {
+  background-color: var(--color-card-bg);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}

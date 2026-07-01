@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — SmartMatatu Passenger Experience Study 2026</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+<div class="page">
+  <header class="site-header">
+    <button type="button" id="theme-toggle-btn" class="theme-toggle" aria-label="Switch to dark mode">
+      <span aria-hidden="true" id="theme-toggle-icon">&#9789;</span>
+      <span id="theme-toggle-label">Dark mode</span>
+    </button>
+  </header>
+
+  <main class="page__content">
+    <div class="thank-you-card">
+
+      <div class="success-icon" role="img" aria-label="Success"></div>
+
+      <h1 style="font-size:var(--font-size-lg); color:var(--color-text-primary);">
+        Thank you for participating
+      </h1>
+
+      <p style="font-size:var(--font-size-base);">
+        Your anonymous response has been recorded and will directly
+        inform the future design of SmartMatatu.
+      </p>
+
+      <div>
+        <p style="font-size:var(--font-size-sm); margin-bottom:var(--space-xs);">
+          Your anonymous response ID:
+        </p>
+        <span class="response-id-display" id="response-id-display">&#8212;</span>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div style="width:100%;">
+        <p style="font-size:var(--font-size-sm); font-weight:500; color:var(--color-text-primary);
+                  margin-bottom:var(--space-sm); text-align:left;">What happens next?</p>
+        <div style="display:flex; flex-direction:column; gap:var(--space-sm);">
+          <div class="what-next-item">
+            <span class="what-next-item__icon" aria-hidden="true">&#128202;</span>
+            <p class="what-next-item__text">Your responses will be analysed alongside other
+            participants' to identify the most common challenges passengers face.</p>
+          </div>
+          <div class="what-next-item">
+            <span class="what-next-item__icon" aria-hidden="true">&#128736;</span>
+            <p class="what-next-item__text">Findings will directly inform the engineering
+            requirements for future SmartMatatu prototypes.</p>
+          </div>
+          <div class="what-next-item">
+            <span class="what-next-item__icon" aria-hidden="true">&#128274;</span>
+            <p class="what-next-item__text">Your data is fully anonymous. It is never linked
+            to your name, device, or any personal information.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <p style="font-size:var(--font-size-sm);">
+        Your voice matters. Every response brings us one step closer to safer,
+        more reliable public transport for everyone in Kenya.
+      </p>
+
+      <span class="closing-badge">Asante sana &#128591;</span>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>SmartMatatu Research Platform &middot; Version 1.0</p>
+  </footer>
+</div>
+
+<script src="js/data/questions.js"></script>
+<script src="js/storage/storage.js"></script>
+<script src="js/engine/validation.js"></script>
+<script src="js/engine/engine.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

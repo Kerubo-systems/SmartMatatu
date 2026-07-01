@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey — SmartMatatu Passenger Experience Study 2026</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+<div class="page">
+  <header class="site-header">
+    <button type="button" id="theme-toggle-btn" class="theme-toggle" aria-label="Switch to dark mode">
+      <span aria-hidden="true" id="theme-toggle-icon">&#9789;</span>
+      <span id="theme-toggle-label">Dark mode</span>
+    </button>
+  </header>
+
+  <main class="page__content">
+    <div class="survey-card">
+
+      <div class="survey-card__progress-row" role="progressbar" aria-labelledby="progress-label">
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <span class="progress-label" id="progress-label">Question 1</span>
+      </div>
+
+      <div id="question-container" aria-live="polite" aria-atomic="true">
+        <noscript>
+          <p style="color:var(--color-text-secondary); padding:var(--space-md);">
+            This survey requires JavaScript. Please enable it and refresh.
+          </p>
+        </noscript>
+      </div>
+
+      <div class="survey-card__nav">
+        <button type="button" id="previous-btn" class="btn btn--secondary"
+                style="visibility:hidden;" aria-label="Go to previous question">
+          &#8592; Previous
+        </button>
+        <button type="button" id="next-btn" class="btn btn--primary"
+                aria-label="Go to next question">
+          Next &#8594;
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>SmartMatatu Research Platform &middot; Version 1.0</p>
+  </footer>
+</div>
+
+<script src="js/data/questions.js"></script>
+<script src="js/storage/storage.js"></script>
+<script src="js/engine/validation.js"></script>
+<script src="js/engine/engine.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
